@@ -6,11 +6,12 @@
 #    By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/30 14:28:30 by ymatsui           #+#    #+#              #
-#    Updated: 2024/01/09 12:58:43 by ymatsui          ###   ########.fr        #
+#    Updated: 2024/01/09 17:54:37 by ymatsui          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
+EXEC = libftprintf
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
