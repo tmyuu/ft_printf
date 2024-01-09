@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 10:14:04 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 14:09:57 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 17:45:48 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ void	ft_check_specifier(const char *format, t_format *fmt_struct)
 		*fmt_struct = create_hex_upper_format();
 	else if (*format && *format == '%')
 		*fmt_struct = create_percent_format();
+	else
+		return ;
 }
 
 int	ft_printf(const char *format, ...)
