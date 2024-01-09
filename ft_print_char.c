@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 10:39:20 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 12:27:13 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 13:47:08 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ t_format	create_char_format(void)
 	t_format	format;
 
 	format.specifier = 'c';
-	format.ft_printf = ft_print_char;
+	format.print_func = *ft_print_char;
 	return (format);
 }

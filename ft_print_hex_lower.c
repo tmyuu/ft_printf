@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 10:43:25 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 11:17:53 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 13:47:02 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,6 @@ t_format	create_hex_lower_format(void)
 	t_format	format;
 
 	format.specifier = 'x';
-	format.ft_printf = ft_print_hex_lower;
+	format.print_func = ft_print_hex_lower;
 	return (format);
 }

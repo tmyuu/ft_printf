@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 10:14:04 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 12:19:47 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 14:09:57 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_printf(const char *format, ...)
 		{
 			format++;
 			ft_check_specifier(format, &fmt_struct);
-			len += fmt_struct.ft_printf(&args);
+			len += fmt_struct.print_func(&args);
 		}
 		else
 		{

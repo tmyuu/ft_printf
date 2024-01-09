@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 10:07:55 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 11:14:37 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 14:10:48 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ t_format	create_unsigned_decimal_format(void)
 	t_format	format;
 
 	format.specifier = 'u';
-	format.ft_printf = ft_print_unsigned_decimal;
+	format.print_func = ft_print_unsigned_decimal;
 	return (format);
 }

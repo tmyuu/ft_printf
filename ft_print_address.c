@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 12:23:38 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 12:40:16 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 13:47:14 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,6 @@ t_format	create_address_format(void)
 	t_format	format;
 
 	format.specifier = 'p';
-	format.ft_printf = ft_print_address;
+	format.print_func = ft_print_address;
 	return (format);
 }

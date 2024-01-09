@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 11:12:30 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 11:17:45 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 13:46:58 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,6 @@ t_format	create_hex_upper_format(void)
 	t_format	format;
 
 	format.specifier = 'X';
-	format.ft_printf = ft_print_hex_upper;
+	format.print_func = ft_print_hex_upper;
 	return (format);
 }

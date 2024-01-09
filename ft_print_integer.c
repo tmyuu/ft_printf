@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 08:50:14 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 12:37:02 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 13:46:53 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,6 @@ t_format	create_int_format(void)
 	t_format	format;
 
 	format.specifier = 'i';
-	format.ft_printf = ft_print_int;
+	format.print_func = ft_print_int;
 	return (format);
 }

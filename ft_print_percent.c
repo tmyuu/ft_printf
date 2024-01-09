@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 11:18:47 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 11:54:39 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 13:46:50 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ t_format	create_percent_format(void)
 	t_format	format;
 
 	format.specifier = '%';
-	format.ft_printf = ft_print_percent;
+	format.print_func = ft_print_percent;
 	return (format);
 }

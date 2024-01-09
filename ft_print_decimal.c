@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 13:57:07 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 12:35:55 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/01/09 13:47:06 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,6 @@ t_format	create_decimal_format(void)
 	t_format	format;
 
 	format.specifier = 'd';
-	format.ft_printf = ft_print_decimal;
+	format.print_func = ft_print_decimal;
 	return (format);
 }
