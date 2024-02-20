@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 10:14:04 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/01/09 18:35:00 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/02/20 12:34:10 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ int	ft_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
+			if (*format == '\0')
+				break ;
 			ft_check_specifier(format, &fmt_struct);
 			len += fmt_struct.print_func(&args);
 		}
