@@ -6,7 +6,7 @@
 /*   By: ymatsui <ymatsui@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/30 10:14:04 by ymatsui           #+#    #+#             */
-/*   Updated: 2024/02/20 12:34:10 by ymatsui          ###   ########.fr       */
+/*   Updated: 2024/02/20 13:37:41 by ymatsui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,8 @@ int	ft_printf(const char *format, ...)
 	return (len);
 }
 
-int	main(void)
-{
-	ft_printf("%");
-	return (0);
-}
+// int	main(void)
+// {
+// 	ft_printf("%");
+// 	return (0);
+// }
